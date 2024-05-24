@@ -3,7 +3,7 @@
 <!-- Page Header-->
 <header
   class="masthead"
-  style="background-image: url('../static/assets/img/home-bg.jpg')"
+  style="background-image: url('../static/assets/img/dp.jpg')"
 >
   <div class="container position-relative px-4 px-lg-5">
     <div class="row gx-4 gx-lg-5 justify-content-center">
@@ -14,7 +14,7 @@
           {% else: %}
           <h1>Daily Blog</h1>
           {% endif %}
-          <span class="subheading">A collection of random musings.</span>
+          <span class="subheading">Watch our memorable blogs. You can also contribute by creating your own blog post.</span>
         </div>
       </div>
     </div>
@@ -35,8 +35,10 @@
           Posted by
           <a href="#">{{post.author.name}}</a>
           on {{post.date}}
-          <!-- TODO: Only show delete button if user id is 1 (admin user) -->
+
+          {% if current_user.id == 1: %}
           <a href="{{url_for('delete_post', post_id=post.id) }}">✘</a>
+          {% endif %}
         </p>
       </div>
       <!-- Divider-->

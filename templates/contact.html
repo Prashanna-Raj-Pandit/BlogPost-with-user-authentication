@@ -3,18 +3,18 @@
 <!-- Page Header-->
 <header
   class="masthead"
-  style="background-image: url('../static/assets/img/contact-bg.jpg')"
+  style="background-image: url('../static/assets/img/contact.jpeg')"
 >
   <div class="container position-relative px-4 px-lg-5">
     <div class="row gx-4 gx-lg-5 justify-content-center">
       <div class="col-md-10 col-lg-8 col-xl-7">
         <div class="page-heading">
           {% if msg_sent: %}
-          <h1>Successfully sent your message</h1>
+          <h2>Successfully sent your message</h2>
           {% else: %}
-          <h1>Contact Me</h1>
+          <h1>Contact Us</h1>
           {% endif %}
-          <span class="subheading">Have questions? I have answers.</span>
+          <span class="subheading">Have questions? Please let us know.</span>
         </div>
       </div>
     </div>
@@ -26,9 +26,10 @@
     <div class="row gx-4 gx-lg-5 justify-content-center">
       <div class="col-md-10 col-lg-8 col-xl-7">
         <p>
-          Want to get in touch? Fill out the form below to send me a message and
-          I will get back to you as soon as possible!
+          Want to get in touch? Fill out the form below to send us a message and
+          We will get back to you as soon as possible!
         </p>
+
         <div class="my-5">
           <!-- * * * * * * * * * * * * * * *-->
           <!-- * * Simplified SB Contact Form for the Tutorial* *-->
@@ -84,11 +85,11 @@
             </div>
             <br />
             <button
-              class="btn btn-danger text-uppercase"
+              class="btn btn-primary text-uppercase"
               id="submitButton"
               type="submit"
             >
-              NOT USED in Day 69
+              Submit
             </button>
           </form>
         </div>
