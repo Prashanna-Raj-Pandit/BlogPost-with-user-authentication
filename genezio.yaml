@@ -1,0 +1,15 @@
+backend:
+    functions:
+        - entry: main.py
+          handler: app
+          name: flask
+          path: .
+          type: httpServer
+    language:
+        name: python
+        packageManager: pip
+        runtime: python3.13.x
+    path: .
+name: BlogPost-with-user-authentication
+region: us-east-1
+yamlVersion: 2
